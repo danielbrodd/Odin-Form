@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=600, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Sign-up</title>
+</head>
+<body>
+    <div class="canvas">
+        <div class="backgroundImage">
+            <div class="hero">
+                <img src="photos/Union (1).svg" alt="logo">
+                <h1>Get your groove on</h1>
+            </div>
+        </div>
+        <div class="container">
+        
+            <div class="form">
+                <div class="banner">
+                    <h1>This is not a real service!</h1>
+                    <p>Get ready to get ready!</p>
+                </div>
+                <h2>Lets do this!</h2>
+                <form  >
+                        
+                   
+                        <div class="leftCol">
+                            <li><label for="fName">first name</label><input type="text" id="fName" name="usr_fName" tabindex="1" ></li>
+                            <li><label for="email">email</label><input type="email" id="email" name="usr_email" tabindex="3"></li>
+                            <li><label for="pass">password</label><input type="password" id="pass" name="usr_pass" tabindex="5"></li>
+                        </div>
+                        <div class="rightCol">
+                            <li><label for="lName">last name</label><input type="text" id="lName" name="usr_lName" tabindex="2"></li>
+                            <li><label for="phone">phone number</label><input type="tel" id="phone" name="usr_phone" tabindex="4"></li>
+                            <li><label for="confPass">confirm password</label><input type="password" id="confPass" name="usr_confPass" tabindex="6"></li>
+                        </div>
+                        <button type="submit" id="button" tabindex="7" onsubmit="matchPasword()" >Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

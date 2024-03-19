@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+.canvas{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #888;
+    display: flex;
+}
+.backgroundImage{
+    background: url(photos/patryk-wojcieszak-Fq7u10QceUc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 43%;
+    height: 100%;
+    position: relative;
+}
+.hero{
+    font-family: 'Righteous', sans-serif;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 12em;
+    position: absolute;
+    top: 30%;
+    background-color: #9ae7e55a;
+    backdrop-filter: blur(2.5px);
+    
+}
+.hero>img{
+    margin: 2px 10px;
+    
+}
+.hero>h1{
+    margin-right: 12% ;
+    color:white;
+    text-shadow: 1px 3px 3px #fa0d0d8e, -1px -3px 3px #00e1fff6, 0 0 6px black;
+}
+.container{
+    background-color: rgb(243, 242, 242);
+    width: 70%;
+    height: 100%;
+}
+.form{
+    background-color: #fff;
+    height: 72%;
+    box-shadow: 0 4px 7px #d7d7d7f2;
+    position: relative;
+   
+}
+.banner{
+    background-color: rgb(238, 242, 243);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.banner>h1{
+    font-family: 'Righteous', sans-serif;
+    padding-left: 12px;
+}
+.banner>p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 18px;
+}
+.form>h2{
+    position: relative;
+    top: 40px;
+    left: 50px;
+    font-family: 'Righteous', sans-serif;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    gap: 100px;
+    position: absolute;
+    top: 50%;
+
+
+}
+li{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Righteous', sans-serif;
+    font-variant: normal;
+    font-variant-caps: all-small-caps;
+    gap: 5px;
+    padding-top: 25px;
+}
+input{
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    outline: 2px solid rgb(3, 6, 6);
+    padding-inline-start: 10px;
+}
+input:focus{
+    outline: 2px solid rgb(38, 181, 184);
+}
+label {
+    padding-left: 5px;
+}
+button{
+    position: absolute;
+    bottom: -20vh;
+    left: 5vw;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #a3c7c9;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    transition: all ease 0.2s;
+}
+button:active{
+    background-color: #9ab3b8;
+}
+button:focus{
+    background-color: #9ab3b8;
+    outline: 2px solid #314453;
+}
+
+.wrong{
+    background-color: red;
+}
